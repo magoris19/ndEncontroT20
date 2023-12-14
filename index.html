@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" >
+    <title>JavaScript &amp; jQuery - Chapter 5: Document Object Model - Query Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="page">
+      <div id="ajuda"><i class="fa-solid fa-circle-question" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: #f2d177;"></i></div>
+      
+      <!-- Modal Ajuda -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Ajuda</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Esta calculadora utiliza o método de agrupar os ND Diferentes.</p>
+              <p>Realize o método de agrupar ND Igual antes utilizar a calculadora.</p>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      
+      <h1 id="header" class="h1Icone"></h1>
+      <h2>Calculadora de ND de Encontro para T20</h2>
+      <!-- Container para os campos de entrada e rótulos -->
+      <div class="input-group">
+        <!-- Rótulo e campo de entrada para Ameaça -->
+        <div class="txtAmeaca">
+          <label for="txtAmeaca" class="inline-label">Ameaça</label>
+          <input type="text" id="txtAmeaca" class="Complete" placeholder="Nome da ameaça aqui...">
+        </div>
+        <!-- Rótulo e campo de entrada para ND -->
+        <div class="ndAmeaca">
+          <label for="ndAmeaca" class="inline-label">ND</label>
+          <input type="number" id="ndAmeaca" class="Complete" placeholder="...">
+        </div>
+      </div>
+
+      <!-- Botões -->
+      <div class="botoes">
+        <button type="button" onclick="adicionar()" class="btn btn-danger button" id="buttonSum">+</button>
+        <button type="button" onclick="recarregar()" class="btn btn-danger button" id="buttonReload">reset</button>
+        <button type="button" onclick="calcularNDEncontro()" class="btn btn-danger button" id="calcularENDEncontro">calc</button>
+      </div>
+
+      <!-- Lista de ameaças -->
+      <ul id="ul"></ul>
+
+      <!-- Resultado do cálculo -->
+      <div id="resultadoContainer"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
