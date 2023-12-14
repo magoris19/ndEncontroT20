@@ -26,7 +26,6 @@ Esta é uma calculadora simples de Nível de Desafio (ND) para encontros no cont
 
 - Bootstrap v5.3.2
 - Font Awesome v6.4.2
-- jQuery v3.7.1
 
 ## Como Contribuir
 
