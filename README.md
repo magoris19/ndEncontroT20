@@ -7,7 +7,7 @@ Esta é uma calculadora simples de Nível de Desafio (ND) para encontros no cont
 
 - Adicionar ameaças com seus respectivos NDs.
 - Calcular o ND do encontro com base nas ameaças adicionadas.
-- **A ser implementado:** Ainda não calcula quando existem NDs iguais.
+- _**A SER IMPLEMENTADO:**_ Ainda não calcula quando existem NDs iguais.
 
 ## Como Usar
 
